@@ -1,0 +1,23 @@
+[package]
+name = "sge_loadsensor"
+version = "0.0.0"
+description = "Write SGE / UGE load sensors"
+keywords = ["sge", "load", "sensor", "loadsensor"]
+authors = ["Joseph Borg <joe@josephb.org>"]
+repository = "https://github.com/joedborg/sge_loadsensor.git"
+homepage = "https://github.com/joedborg/sge_loadsensor"
+documentation = "https://github.com/joedborg/sge_loadsensor"
+readme = "README.md"
+license = "MIT"
+
+[lib]
+name = "sge_loadsensor"
+path = "src/lib.rs"
+
+[[bin]]
+
+name = "example"
+path = "src/examples/main.rs"
+
+[dependencies]
+hostname = "^0.1"
